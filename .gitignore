@@ -41,3 +41,4 @@ yarn-debug.log*
 .yarn-integrity
 .rvmrc
 development.sqlite3
+.nvmrc
