@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class Users::SessionsController < UnregisteredController
+class Users::SessionsController < Devise::SessionsController
+  layout 'unregistered'
   # before_action :configure_sign_in_params, only: [:create]
 
   # GET /resource/sign_in

@@ -1,3 +1,3 @@
-class UnregisteredController < Devise::SessionsController
+class UnregisteredController < ApplicationController
     layout 'unregistered'
 end
