@@ -23,7 +23,7 @@ export default class extends Controller {
             field.focus();
             nextElementSibling.classList.remove('none')
             nextElementSibling.classList.add('block')
-            nextElementSibling.innerHTML = 'Es requerido'
+            nextElementSibling.innerHTML = 'It is required'
             isValid = false;
           } else {
             nextElementSibling.classList.remove('block')
