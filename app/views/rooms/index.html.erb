@@ -1,7 +1,9 @@
 <div class="container mx-auto">
 
-  <h1>Rooms</h1>
-  <%= render partial: 'room', collection: @rooms %>
+  <h1 class="font-bold">Explore !</h1>
+  <div class="grid grid-cols-3 gap-4">
+    <%= render partial: 'room', collection: @rooms %>
+  </div>
 
   <%= link_to 'New Rome', new_room_path %>
 </div>
