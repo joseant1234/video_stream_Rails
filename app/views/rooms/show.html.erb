@@ -10,7 +10,7 @@
   <%= @room.vonage_session_id %>
 </p>
 
-<div id="videos" data-controller="vonage" data-vonage-token="<%= @token %>" data-vonage-api-key="<%= Rails.application.credentials.vanage_api_key %>" data-vonage-session-id="<%= @room.vonage_session_id %>" data-vonage-name="<%= current_user.email %>">
+<div id="videos" data-controller="vonage" data-vonage-token="<%= @token %>" data-vonage-api-key="<%= Rails.application.credentials.vonage_api_key %>" data-vonage-session-id="<%= @room.vonage_session_id %>" data-vonage-name="<%= current_user.email %>">
 </div>
 
 <%= link_to 'Edit', edit_room_path(@room) %> |

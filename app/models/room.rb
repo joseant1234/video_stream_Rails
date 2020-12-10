@@ -1,8 +1,8 @@
 class Room < ApplicationRecord
 
-    validates :name, presence: true
+    validates :name, :description, presence: true
 
-    before_create do
+    before_save do
         opentok = OpenTok::OpenTok.new Rails.application.credentials.vonage_api_key, Rails.application.credentials.vonage_api_secret
         session = opentok.create_session
         self.vonage_session_id = session.session_id
