@@ -1,0 +1,13 @@
+<div class="h-screen w-full flex flex-col items-center justify-center bg-teal-lightest font-sans" id="confirmation-modal">
+	<div v-if="modal.visible" @click.self="modal.visible = false" class="h-screen w-full absolute flex items-center justify-center bg-modal">
+        <div class="bg-white rounded shadow p-8 m-4 max-w-xs max-h-full text-center overflow-y-scroll">
+            <div class="mb-4">
+                <h1>Confirmation message!</h1>
+            </div>
+            <div class="flex justify-center">
+                <button class="flex-no-shrink text-white py-2 px-4 rounded bg-teal hover:bg-teal-dark">Yes</button>
+                <button class="flex-no-shrink text-white py-2 px-4 rounded bg-teal hover:bg-teal-dark">No</button>
+            </div>
+        </div>
+    </div>
+</div>
